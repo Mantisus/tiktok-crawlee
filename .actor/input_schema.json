@@ -1,0 +1,29 @@
+{
+    "title": "TikTok Crawlee",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "urls": {
+            "title": "List URLs",
+            "type": "array",
+            "description": "Direct URLs to pages TikTok profiles.",
+            "editor": "stringList",
+            "prefill": ["https://www.tiktok.com/@apifyoffice"]
+        },
+        "maxItems": {
+            "type": "integer",
+            "editor": "number",
+            "title": "Limit search results",
+            "description": "Limits the maximum number of results, applies to each search separately.",
+            "default": 10
+        },
+        "proxySettings": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Select proxies to be used by your scraper.",
+            "prefill": { "useApifyProxy": true },
+            "editor": "proxy"
+        }
+    },
+    "required": ["urls"]
+}

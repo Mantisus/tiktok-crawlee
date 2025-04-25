@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "TikTok-Crawlee",
+    "title": "TikTok - Crawlee",
+    "minMemoryMbytes": 2048,
+    "description": "Scrape video elements from TikTok user pages",
+    "version": "0.1",
+    "meta": {
+      "templateId": "tiktok-crawlee"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+  }

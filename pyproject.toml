@@ -20,8 +20,6 @@ dev = [
 
 [tool.ruff]
 line-length = 120
-include = ["src/**/*.py", "tests/**/*.py", "docs/**/*.py", "website/**/*.py"]
-extend-exclude = ["src/crawlee/project_template"]
 
 [tool.ruff.lint]
 select = ["ALL"]
